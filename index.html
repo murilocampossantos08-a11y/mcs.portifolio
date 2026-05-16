@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>mcs | portifolio murilo.campos.santos</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">contatos</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <main id="#inico" class="cabecalho">
+        <img src="./img/murilo.jpg" alt="foto de murilo campos" class="foto-perfil">
+        <h1>murilo campos</h1>
+        <p class="cabecalho-sub-titulo">desenvolvedor de sistemas</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">sobre mim</h2>
+        <div calss="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Oi, meu nome é Murilo campos santos.
+                Desenvolvedor de sistemas, busco conhecimento para melhorar meu reportório cada vez mais. Conheça um
+                pouco
+                dos meus trabalhos.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" calss="projetos">
+        <h2 calss="projeto-titulo">meu projeto</h2>
+        <div class="projetos-caixa">
+            <div class="display flax"
+            <div class="projetos-card">
+                <a href="https://clone-amazonmcs.vercel.app/" target="_blank"></a>
+                <img src="./img/projetoamazon.jpg" alt="projeto 1" class="projetos-imagem">
+                <div caixa-texto-projeto>
+                    <h3 class="info-projeto">projeto amazon</h3>
+                    <p class="paragrfo-projeto">clone do site da amazon, reponsivo, somente front-end. venha conhecer
+                        meu site!</p>
+                    <a href="https://clone-amazonmcs.vercel.app/" target="_blank" class="botao-projeto">
+                        ver projeto
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form"> Enviar por WhatsApp</button>
+
+        </form>
+
+    </section>
+
+    <script>
+        function enviarwhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511983494854'
+
+            const texto = `Olá! me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            console.log(url)
+
+            window.open(url, '-blank')
+        }
+
+    </script>
+
+</body>
+
+</html>
