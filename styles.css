@@ -100,29 +100,29 @@ h1 {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sobre-caixa {
     padding: 2rem;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 18px;
     border: 1px solid var(--vidro);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     background: rgba(225, 225, 225, 0.05);
 }
 
 .sobre-paragrafo {
     text-align: center;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .projetos {
     padding: 6rem 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
@@ -138,10 +138,12 @@ h1 {
 }
 
 .botao-projeto {
-    display: inline-block;
+    display: flex;
     margin-top: 10px;
     padding: 10px 20px;
-    background: blueviolet;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    box-shadow: 0 0 10px rgba(209, 9, 159, 0.678);
+    border-color: var(--secundaria);
     color: white;
     text-decoration: none;
     align-items:center;
@@ -152,6 +154,7 @@ h1 {
 .projetos-card {
     background: rgba(225, 225, 225, 0.05);
     border-radius: 16px;
+    width: 500px;
     backdrop-filter: blur(10px);
     border: 1px solid var(--vidro);
     overflow: hidden;
@@ -159,41 +162,46 @@ h1 {
 
 .projeto-titulo {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    flex-direction: column;
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
-.projetos-titulo:hover {
+.projeto-titulo:hover {
     box-shadow: 0, 10px, 20px rgba(79, 70, 229, 0.8);
     transform: translateY(-10px) scale(1.03);
+    margin: 0 auto;
 }
 
 .projetos-imagem {
     height: 150px;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 
 .projetos-card img {
     display: block;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
     margin: 0 auto;
     border-radius: 10px;
 }
 
 .caixa-texto-projeto {
-    padding: 1.5rem;
+    padding: 5rem;
 }
 
-.paragrfo-projeto {
+.paragrafo-projeto {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1rem;
+    text-align: column;
 }
 
 .info-projeto {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .contatos {
