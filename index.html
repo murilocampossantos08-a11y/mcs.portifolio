@@ -31,17 +31,19 @@
     </nav>
     <main id="#inico" class="cabecalho">
         <section id="inicio">
-        <img src="./img/murilo.jpg" alt="foto de murilo campos" class="foto-perfil">
-        <h1>murilo campos</h1>
+            <div class="container-foto">
+                <img src="./img/murilo.jpg" alt="foto de murilo campos" class="foto-perfil">
+            </div>
+            <h1>murilo campos</h1>
         </section>
         <p class="cabecalho-sub-titulo">desenvolvedor de sistemas</p>
     </main>
 
-    
+
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">sobre mim</h2>
-        <div calss="sobre-caixa">
+        <div class="sobre-caixa">
             <p class="sobre-paragrafo">
                 Oi, meu nome é Murilo campos santos.
                 Desenvolvedor de sistemas, busco conhecimento para melhorar meu reportório cada vez mais. Conheça um
@@ -51,14 +53,13 @@
         </div>
     </section>
 
-    <section id="projetos" calss="projetos">
-        <h2 class="projeto-titulo">meu projeto</h2>
+    <section id="projetos" class="projetos">
+        <h2 class="projeto-titulo">meus projetos</h2>
         <div class="projetos-caixa">
-            <div class="display flex">
-                <div class="projetos-card">
+            <div class="projetos-card">
                 <a href="https://clone-amazonmcs.vercel.app/" target="_blank"></a>
                 <img src="./img/projetoamazon.jpg" alt="projeto 1" class="projetos-imagem">
-                <div caixa-texto-projeto>
+                <div class="caixa-texto-projeto">
                     <h3 class="info-projeto">projeto amazon</h3>
                     <p class="paragrafo-projeto">clone do site da amazon, reponsivo, somente front-end. venha conhecer
                         meu site!</p>
@@ -68,7 +69,19 @@
                 </div>
             </div>
 
-        </div>
+                <div class="projetos-card">
+                    <a href="loja-de-café" target="_blank"></a>
+                    <img src="./img/loja-café.jpg" alt="projeto 2" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projeto">loja de café</h3>
+                        <p class="paragrafo-projeto">uma cafeteria ou uma inovação? venha conhecer com seus proprios
+                            olhos!</p>
+                        <a href="https://loja-café.vercel.app/" target="_blank" class="botao-projeto">
+                            ver projeto
+                        </a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="contatos" class="contatos">
